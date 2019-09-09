@@ -13,8 +13,7 @@ class Base {
 
     //http 请求类, 当noRefech为true时，不做未授权重试机制
     request(params, noRefetch) {
-        var that = this,
-            ur + params.url;
+      var that = this.baseRestUrl + params.url;
         if(!params.type){
             params.type='get';
         }
@@ -23,7 +22,7 @@ class Base {
             url = params.url;
         }
         wx.request({
-            url: url,
+          url: that,
             data: params.data,
             method:params.type,
             header: {

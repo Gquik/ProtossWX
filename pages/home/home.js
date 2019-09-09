@@ -30,7 +30,7 @@ Page({
         /*获取单品信息*/
         home.getProductorData((data) => {
             that.setData({
-                productsArr: data
+              productsArr: data
             });
             callback&&callback();
         });

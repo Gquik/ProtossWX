@@ -14,7 +14,7 @@ class Home extends Base{
     getBannerData(callback){
         var that=this;
         var param={
-            url: 'banner/1',
+            url: 'banner?id=1',
 
             sCallback:function(data){
                 data=data.items;
@@ -26,7 +26,7 @@ class Home extends Base{
     /*首页主题*/
     getThemeData(callback){
         var param={
-            url: 'theme?ids=1,2,3',
+          url: 'theme?idList=1,2,3',
             sCallback:function(data){
                 callback && callback(data);
             }
@@ -37,7 +37,7 @@ class Home extends Base{
     /*首页部分商品*/
     getProductorData(callback){
         var param={
-            url: 'product/recent',
+            url: 'product-recent?count=1',
             sCallback:function(data){
                 callback && callback(data);
             }

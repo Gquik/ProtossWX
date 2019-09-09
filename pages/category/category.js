@@ -23,7 +23,7 @@ Page({
       that.getProductsByCategory(categoryData[0].id,(data)=>{
         var dataObj= {
           procucts: data,
-          topImgUrl: categoryData[0].img.url,
+          topImgUrl: categoryData[0].image.url,
           title: categoryData[0].name
         };
         that.setData({
@@ -67,7 +67,7 @@ Page({
       if(item==arr[index]) {
         obj['categoryInfo' + item]={
           procucts:data,
-          topImgUrl:baseData.img.url,
+          topImgUrl: baseData.image.url,
           title:baseData.name
         };
 

@@ -3,7 +3,7 @@
     <swiper indicator-dots="true" autoplay="true" class="swiper">
         <block wx:for="{{bannerArr}}">
             <swiper-item class="banner-item" bindtap="onProductsItemTap" data-id="{{item.key_word}}">
-                <image class="item-image" src="{{item.img.url}}" mode="aspectFill" />
+                <image class="item-image" src="{{item.image.url}}" mode="aspectFill" />
             </swiper-item>
         </block>
     </swiper>
@@ -14,10 +14,10 @@
             <view class="theme-box">
                 <block wx:for="{{themeArr}}">
                     <view wx:if="{{index==2}}" class="theme-item big" bindtap="onThemesItemTap" data-id="{{item.id}}" data-name="{{item.name}}">
-                        <image src="{{item.topic_img.url}}"></image>
+                        <image src="{{item.topicImage.url}}"></image>
                     </view>
                     <view wx:else class="theme-item" bindtap="onThemesItemTap" data-id="{{item.id}}" data-name="{{item.name}}">
-                        <image src="{{item.topic_img.url}}"></image>
+                        <image src="{{item.topicImage.url}}"></image>
                     </view>
                 </block>
             </view>
